@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Cyber InfoSoft Corporation</title>
+  
+  <!-- Meta Description -->
+  <meta name="description" content="Explore our comprehensive digital services including app development, game development, website development, and custom solutions for businesses of all sizes.">
+  
+ 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Noto+Sans+Mono&family=Rakkas&family=Style+Script&family=Bangers&display=swap" rel="stylesheet">
+  
+  <style>
+    .font-display { 
+      font-family: 'Style Script', cursive; 
+    }
+    .font-handwriting { 
+      font-family: 'Noto Sans Mono', monospace; 
+    }
+    .font-title { 
+      font-family: 'Rakkas', serif; 
+    }
+    .font-cute { 
+      font-family: 'Bangers', cursive; 
+      font-weight: 400; 
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+    }
+    
+    .service-details h2 {
+      font-family: 'Bangers', cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+      font-size: 2.2rem;
+    }
+    
+    .page-header h1 {
+      font-family: 'Bangers', cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+      font-size: 3rem;
+    }
+    
+    .page-header p.lead {
+      font-family: 'Noto Sans Mono', monospace;
+      font-size: 1.2rem;
+    }
+  </style>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/templates.css">
+  
+  <!-- Prevent Flash of Incorrect Theme -->
+  <script>
+    (function() {
+      // Immediately apply the saved theme to prevent flash
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  
+  <!-- Particles Background -->
+  <div id="particles-js" class="particles-container"></div>
+  
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+<img src="logo_black_bg_white.png" alt="Cyber InfoSoft Corporation Logo">
+          <span>Cyber InfoSoft</span>
+        </a>
+        
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="services.html" class="nav-link active">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#app-development-details" class="dropdown-item">App Development</a></li>
+              <li><a href="services.html#game-development-details" class="dropdown-item">Game Development</a></li>
+              <li><a href="services.html#website-development-details" class="dropdown-item">Website Development</a></li>
+              <li><a href="services.html#custom-solutions-details" class="dropdown-item">Custom Solutions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="quote.html" class="nav-cta">Get a Quote</a></li>
+        </ul>
+        
+        <button class="theme-toggle" aria-label="Toggle Dark Mode">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon d-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="backdrop"></div>
+  
+  <!-- Page Header -->
+  <section class="page-header bg-light">
+    <div class="container text-center">
+      <h1 class="reveal" style="font-size: 3.5rem;">Our Services</h1>
+      <p class="lead reveal">Comprehensive digital solutions tailored for businesses of all sizes</p>
+    </div>
+  </section>
+  
+  <!-- Service Details -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.25); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="website-development-details">
+          <div class="row">
+            <div class="col-lg-12">
+            <h2 class="font-cute">Website Development</h2>
+            <p class="mb-4">We create custom websites that are tailored to your specific business needs and goals. Our websites are designed to be visually appealing, user-friendly, and optimized for performance.</p>
+            
+            <h4 class="mb-3">What's Included:</h4>
+            <ul class="service-list">
+              <li>Custom design and development</li>
+              <li>Responsive layout for all devices</li>
+              <li>SEO-friendly structure</li>
+              <li>Content management system</li>
+              <li>Contact forms and integration</li>
+              <li>Google Analytics setup</li>
+              <li>Basic SEO optimization</li>
+              <li>Cross-browser compatibility</li>
+            </ul>
+            
+            <h4 class="mb-3 mt-4">Timeline:</h4>
+            <p>4-8 weeks, depending on project complexity</p>
+            
+            <h4 class="mb-3 mt-4">Pricing:</h4>
+            <div class="pricing-tiers">
+              <div class="pricing-tier">
+                <h5>Basic</h5>
+                <p class="price">₹1,12,500 - ₹2,25,000</p>
+                <p>5-7 pages, responsive design, contact form</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Standard</h5>
+                <p class="price">₹2,25,000 - ₹4,50,000</p>
+                <p>8-15 pages, custom design, CMS, basic SEO</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Premium</h5>
+                <p class="price">₹4,50,000+</p>
+                <p>15+ pages, advanced functionality, premium design</p>
+              </div>
+            </div>
+            
+            <div class="mt-4">
+              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.3); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="app-development-details">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-cute">App Development</h2>
+            <p class="mb-4">We create powerful, intuitive mobile applications for iOS and Android platforms that help businesses engage with their customers, streamline operations, and drive growth.</p>
+            
+            <h4 class="mb-3">What's Included:</h4>
+            <ul class="service-list">
+              <li>Native iOS and Android development</li>
+              <li>Cross-platform solutions (React Native, Flutter)</li>
+              <li>UI/UX design for mobile</li>
+              <li>API integration and backend development</li>
+              <li>User authentication and profiles</li>
+              <li>Push notifications</li>
+              <li>Offline functionality</li>
+              <li>App Store and Google Play submission</li>
+              <li>Analytics integration</li>
+            </ul>
+            
+            <h4 class="mb-3 mt-4">Timeline:</h4>
+            <p>8-16 weeks, depending on app complexity and features</p>
+            
+            <h4 class="mb-3 mt-4">Pricing:</h4>
+            <div class="pricing-tiers">
+              <div class="pricing-tier">
+                <h5>Basic</h5>
+                <p class="price">₹7,50,000 - ₹18,75,000</p>
+                <p>Core functionality, simple UI, single platform</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Standard</h5>
+                <p class="price">₹18,75,000 - ₹37,50,000</p>
+                <p>Advanced features, custom design, both platforms</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Premium</h5>
+                <p class="price">₹37,50,000+</p>
+                <p>Complex functionality, premium design, full integration</p>
+              </div>
+            </div>
+            
+            <div class="mt-4">
+              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.35); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="game-development-details">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-cute">Game Development</h2>
+            <p class="mb-4">We develop engaging and immersive games for mobile, web, and desktop platforms that entertain users, drive engagement, and can be used for entertainment, education, or marketing purposes.</p>
+            
+            <h4 class="mb-3">What's Included:</h4>
+            <ul class="service-list">
+              <li>2D and 3D game development</li>
+              <li>Unity and Unreal Engine development</li>
+              <li>Game design and mechanics</li>
+              <li>Character and environment design</li>
+              <li>Animation and visual effects</li>
+              <li>Sound design and music</li>
+              <li>Multiplayer functionality</li>
+              <li>In-app purchases and monetization</li>
+              <li>Cross-platform deployment</li>
+            </ul>
+            
+            <h4 class="mb-3 mt-4">Timeline:</h4>
+            <p>12-24 weeks, depending on game complexity and features</p>
+            
+            <h4 class="mb-3 mt-4">Pricing:</h4>
+            <div class="pricing-tiers">
+              <div class="pricing-tier">
+                <h5>Basic</h5>
+                <p class="price">₹11,25,000 - ₹22,50,000</p>
+                <p>Simple 2D game, basic mechanics</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Advanced</h5>
+                <p class="price">₹22,50,000 - ₹56,25,000</p>
+                <p>Complex 2D or simple 3D game</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Premium</h5>
+                <p class="price">₹56,25,000+</p>
+                <p>Advanced 3D game, complex mechanics</p>
+              </div>
+            </div>
+            
+            <div class="mt-4">
+              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.4); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="custom-solutions-details">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-cute">Custom Digital Solutions</h2>
+            <p class="mb-4">We develop tailored digital solutions that address your unique business challenges using cutting-edge technologies like AI, machine learning, IoT, and more.</p>
+            
+            <h4 class="mb-3">What's Included:</h4>
+            <ul class="service-list">
+              <li>Custom software development</li>
+              <li>AI and machine learning integration</li>
+              <li>IoT application development</li>
+              <li>Blockchain solutions</li>
+              <li>AR/VR experiences</li>
+              <li>Data analytics and visualization</li>
+              <li>API development and integration</li>
+              <li>Legacy system modernization</li>
+              <li>Cloud migration and solutions</li>
+            </ul>
+            
+            <h4 class="mb-3 mt-4">Timeline:</h4>
+            <p>12-36 weeks, depending on solution complexity</p>
+            
+            <h4 class="mb-3 mt-4">Pricing:</h4>
+            <div class="pricing-tiers">
+              <div class="pricing-tier">
+                <h5>Basic</h5>
+                <p class="price">₹15,00,000 - ₹37,50,000</p>
+                <p>Simple custom solution, limited features</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Advanced</h5>
+                <p class="price">₹37,50,000 - ₹75,00,000</p>
+                <p>Complex solution, advanced integrations</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Enterprise</h5>
+                <p class="price">₹75,00,000+</p>
+                <p>Enterprise-grade solution, full customization</p>
+              </div>
+            </div>
+            
+            <div class="mt-4">
+              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.45); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="maintenance-details">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-cute">Maintenance & Support</h2>
+            <p class="mb-4">We provide ongoing maintenance and support services for all digital products to ensure they remain secure, up-to-date, and performing optimally at all times.</p>
+            
+            <h4 class="mb-3">What's Included:</h4>
+            <ul class="service-list">
+              <li>Regular software updates</li>
+              <li>Security monitoring and patches</li>
+              <li>Bug fixes and issue resolution</li>
+              <li>Performance optimization</li>
+              <li>Content and feature updates</li>
+              <li>Technical support</li>
+              <li>App store compliance management</li>
+              <li>Analytics and reporting</li>
+              <li>User feedback implementation</li>
+            </ul>
+            
+            <h4 class="mb-3 mt-4">Timeline:</h4>
+            <p>Monthly or annual maintenance plans</p>
+            
+            <h4 class="mb-3 mt-4">Pricing:</h4>
+            <div class="pricing-tiers">
+              <div class="pricing-tier">
+                <h5>Basic</h5>
+                <p class="price">₹11,175/month</p>
+                <p>Essential maintenance and updates</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Standard</h5>
+                <p class="price">₹22,425/month</p>
+                <p>Regular updates, support, and monitoring</p>
+              </div>
+              <div class="pricing-tier">
+                <h5>Premium</h5>
+                <p class="price">₹37,425/month</p>
+                <p>Priority support, feature updates, analytics</p>
+              </div>
+            </div>
+            
+            <div class="mt-4">
+              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="section cta bg-primary">
+    <div class="container text-center">
+      <h2 class="text-white reveal">Ready to Start Your Project?</h2>
+      <p class="text-white mb-4 reveal">Let's create a digital solution that helps your business grow.</p>
+      <a href="quote.html" class="btn btn-lg btn-light reveal" style="background-color: #111111; color: white; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">Get a Free Quote</a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="footer-logo">
+<img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
+            <span>Cyber InfoSoft</span>
+          </div>
+          <p class="footer-text">We build custom apps, games, and websites that help businesses of all sizes succeed in the digital world.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="index.html">Home</a></li>
+            <li class="footer-link"><a href="about.html">About Us</a></li>
+            <li class="footer-link"><a href="services.html">Services</a></li>
+            <li class="footer-link"><a href="portfolio.html">Portfolio</a></li>
+            <li class="footer-link"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="services.html#app-development">App Development</a></li>
+            <li class="footer-link"><a href="services.html#game-development">Game Development</a></li>
+            <li class="footer-link"><a href="services.html#website-development">Website Development</a></li>
+            <li class="footer-link"><a href="services.html#custom-solutions">Custom Solutions</a></li>
+            <li class="footer-link"><a href="services.html#maintenance">Maintenance & Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 col-md-4">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-text">Subscribe to our newsletter for the latest news and insights.</p>
+          <form class="newsletter-form">
+            <input type="email" class="form-control newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2023 Cyber InfoSoft Corporation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Floating Quote Button -->
+  <a href="quote.html" class="floating-quote-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 5h6m-6 0v14m0-14l-4 4m10 6h-6m6 0l-4 4"></path>
+    </svg>
+    Request a Quote
+  </a>
+  
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/floating-quote.js"></script>
+</body>
+</html>
